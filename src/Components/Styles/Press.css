@@ -1,0 +1,42 @@
+.press-com{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #1c263d;
+    background-color: #e3e6efb7;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.press{
+    font-size: 0.8rem;
+}
+
+
+
+@media all and (max-width:750px){
+    .press-com{
+        height: 70vh;
+        padding: 20px;
+    }
+    .logos{
+        height: 100%;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .logos img{
+        height: 80px;
+        width: 80px;
+    }
+    .press{
+        font-weight: 700;
+    }
+}

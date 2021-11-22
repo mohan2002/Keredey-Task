@@ -1,0 +1,128 @@
+.footercompe{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    color: #1c263d;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-content{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-footer{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.one,.two,.three,.four{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heading-footer{
+    font-size: 1.1rem;
+}
+
+.right-footer p{
+    font-size: 0.8rem;
+}
+
+
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.left-con{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    float: right;
+    font-weight: 600;
+}
+
+@media all and (max-width:850px){
+    .footer-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .right-footer{
+        width: 100%;
+    }
+    .left-con{
+        width: 100%;
+    }
+}
+
+
+.footer-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    padding: 20px;
+    width: 95%;
+    height: 15%;
+    border-top: 1px solid rgba(128, 128, 128, 0.671);
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer-disc{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media all and (max-width:600px){
+    .footercompe{
+        height: 140vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-content{
+        height: 79%;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .right-footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 10px;
+        gap: 20px;
+    }
+    .footer-down{
+        height: 21%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .footer-list{
+        flex-wrap: wrap;
+    }
+}   
